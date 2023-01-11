@@ -10,8 +10,8 @@ module top_module (
     digit dig3 (.clk(clk), .reset(reset), .ena(ena[3]), .q(q[15:12]));
 
     assign ena[1] = (q[3:0]==9); 
-    assign ena[2] = (q[7:4]==9); 
-    assign ena[3] = (q[11:8]==9); 
+    assign ena[2] = (q[3:0]==9&&q[7:4]==9); 
+    assign ena[3] = (q[3:0]==9&&q[7:4]==9&&q[11:8]==9); 
 
 endmodule
 
