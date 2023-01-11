@@ -5,6 +5,6 @@ module top_module(
     input [99:0] data,
     output reg [99:0] q); 
 
-    
+
 
 endmodule
